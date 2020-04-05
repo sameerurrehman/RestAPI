@@ -1,0 +1,11 @@
+<div *ngIf="newsdata">
+  <div *ngFor="let news of newsdata">
+    <h2>Author</h2>
+    <hr />
+    {{news.author}}
+    <h4>Description</h4>
+    {{news.description}}
+    <br />
+    <img [src]="news.urlToImage" height="250px" width="400px"/>
+  </div>
+</div>
